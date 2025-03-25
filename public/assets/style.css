@@ -1,0 +1,78 @@
+/* Style général du body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Titre principal */
+h1 {
+    background-color: white;
+    text-align: center;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre */
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    background-color: white;
+    border-left: 5px solid orange; 
+    padding: 5px 10px; 
+    display: inline-block;
+}
+
+
+/* Style pour le tableau */
+table {
+    width: 100%;
+    border-collapse: collapse; 
+}
+
+th, td {
+    padding: 12px 15px; 
+    text-align: left;    
+    border: 1px solid #ddd; 
+}
+
+th {
+    background-color: #f2f2f2; 
+    font-weight: bold; 
+}
+
+td {
+    background-color: #fff; 
+}
+
+/* Boutons Modifier et Supprimer dans le tableau */
+button {
+    padding: 8px 15px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 5px; /* Espacement entre les boutons */
+}
+
+button:hover {
+    background-color: #a6baaa;
+}
+
+/* Boutons de suppression et de modification dans le tableau */
+button.update {
+    background-color: #007bff; /* Bleu pour le bouton Modifier */
+}
+
+button.update:hover {
+    background-color: #0056b3; /* Bleu foncé au survol */
+}
+
+button.delete {
+    background-color: #dc3545; /* Rouge pour le bouton Supprimer */
+}
+
+button.delete:hover {
+    background-color: #c82333; /* Rouge foncé au survol */
+}

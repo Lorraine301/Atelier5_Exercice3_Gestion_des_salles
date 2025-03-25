@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Salles</title>
+    <link rel="stylesheet" href="assets/style.css">
+   
+</head>
+<body>
+
+    <h1>Gestion des Salles</h1>
+
+    <!-- Liste des salles -->
+    <h2>Liste des Salles</h2>
+    <ul id="room-list">
+        <!-- Les salles seront ajoutées ici dynamiquement -->
+    </ul>
+
+<!-- Formulaire pour modifier les informations d'une salle -->
+    <form id="update-room-form" style="display: none;"> <!-- Formulaire caché par défaut -->
+        <h4>🔄Mettre à jour une Salle</h4>
+        <input type="hidden" id="update-room-id"> <!-- ID caché -->
+        <label for="update-name">Nom de la Salle :</label>
+        <input type="text" id="update-name" placeholder="Nom de la salle" required>
+    
+        <label for="update-capacity">Capacité :</label>
+        <input type="number" id="update-capacity" placeholder="Capacité" required>
+    
+        <button type="submit">Mettre à jour</button>
+    </form>
+
+    <!-- Formulaire pour ajouter une salle -->
+    <h3>➕Ajouter une Salle</h3>
+    <form id="create-room-form">
+        <label for="name">Nom de la Salle :</label>
+        <input type="text" id="name" placeholder="Nom de la salle" required>
+
+        <label for="capacity">Capacité :</label>
+        <input type="number" id="capacity" placeholder="Capacité" required>
+
+        <button type="submit">Ajouter</button>
+    </form>
+
+    <script src="assets/app.js"></script>
+</body>
+</html>
